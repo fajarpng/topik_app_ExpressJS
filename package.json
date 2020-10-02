@@ -1,0 +1,31 @@
+{
+  "name": "topik_app_be",
+  "version": "1.0.0",
+  "description": "stackoverflow clone backend with express JS",
+  "main": "index.js",
+  "author": "Tri Fajar Pagestu",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.0",
+    "multer": "^1.4.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fajarpng/topik_app_ExpressJS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fajarpng/topik_app_ExpressJS/issues"
+  },
+  "homepage": "https://github.com/fajarpng/topik_app_ExpressJS#readme"
+}
