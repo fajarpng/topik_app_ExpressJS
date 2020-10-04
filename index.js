@@ -9,6 +9,7 @@ const response = require('./src/helper/response')
 // Import Routes
 const user = require('./src/route/user/userDetail')
 const topik = require('./src/route/topics/topik')
+const comment = require('./src/route/topics/comment')
 
 // Allowed All
 app.use(cors('*'))
@@ -25,6 +26,7 @@ app.use(bodyParser.urlencoded({
 // App Routes
 app.use('/users', user)
 app.use('/topics', topik)
+app.use('/comments', comment)
 
 // Error Route
 app.get('*', (req, res) => {

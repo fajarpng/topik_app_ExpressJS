@@ -31,6 +31,7 @@ module.exports = {
 				user_id,
 				date: moment().format('YYYY-MM-DD HH:mm:ss')
 			}
+			console.log(title)
 			const result = await model.createTopik(data)
 
 			if (result) {

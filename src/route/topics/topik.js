@@ -5,9 +5,9 @@ const { createTopik, getTopik, editTopik, deleteTopik} = controller
 
 router
 	.get('/:id?', getTopik)
+	.delete('/:id', deleteTopik)
 	.use(verifyToken)
 	.post('/', createTopik)
-	.delete('/:id', deleteTopik)
 	.patch('/:id', editTopik)
 
 module.exports = router

@@ -15,7 +15,7 @@ module.exports = {
 	getComment: (data = {}, start, limit) => {
 	    let query = `SELECT 
 	    	comments.*, 
-	    	DATE_FORMAT(comments.date, "%W, %M %v %Y %r") as date,
+	    	DATE_FORMAT(comments.date,  "%Y/%m/%d %r") as date,
 	    	users.name,
 	    	users.avatar
 	    	FROM comments `

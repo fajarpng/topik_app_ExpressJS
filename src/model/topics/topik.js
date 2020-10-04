@@ -29,7 +29,7 @@ module.exports = {
 	getTopik: (data = {}, start, limit) => {
 	    let query = `SELECT 
 	    	topics.*, 
-	    	DATE_FORMAT(topics.date, "%M %v %Y, %r") as date,
+	    	DATE_FORMAT(topics.date, "%Y/%m/%d %r") as date,
 	    	users.name,
 	    	users.avatar
 	    	FROM topics `

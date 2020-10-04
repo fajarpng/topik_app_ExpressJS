@@ -56,7 +56,11 @@ module.exports = {
       })
       if (checkPassword){
         const data = {
-          result,
+          id: result[0].id,
+          name: result[0].name,
+          about: result[0].about,
+          avatar: result[0].avatar,
+          email,
           token: jwt.sign(
             {
               id: result[0].id,
