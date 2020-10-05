@@ -32,7 +32,7 @@ run the server
 ```
 nodemon
 ```
-# JSON Response
+## JSON Response
 ```
 {
     "status": false,
