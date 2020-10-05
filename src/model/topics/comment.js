@@ -24,6 +24,9 @@ module.exports = {
 	    //If id not null add where condition
 	    if (data.id) {
 	      	query += `WHERE comments.id LIKE '%${data.id}%' `
+	    } else if (data.topik_id) {
+	      	query += `WHERE comments.topik_id LIKE '%${data.topik_id}%' `
+	    	query += `ORDER BY date DESC ` //Sort Query
 	    } else {
 	    	query += `ORDER BY date DESC ` //Sort Query
 	    }

@@ -35,7 +35,9 @@ module.exports = {
 
 	//get Comment from database
 	getComment: async (req, res) => {
-	    const result = await model.getComment()
+		const { id } = req.params
+	    const { topik_id } = req.query
+	    const result = await model.getComment({ id: parseInt(id), topik_id: parseInt(topik_id) })
 	    
 	    res.status(200).send(response({
 	    		success: true,
